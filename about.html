@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiin</title>
+    <link rel="stylesheet" href="about.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+    <nav class="header">
+        <nav class="container-navbar">
+            <div class="logo-and-menu">
+                <div class="logo"><a href="index.html">chiin-portfolio</a></div>
+                <div class="menu-toggle" id="menu-icon">&#9776;</div>
+            </div>
+            <div class="navnar-bar">
+                <ul class="nav-links" id="menu-items">
+                    <li><a href="index.html">_hello</a></li>
+                    <li><a href="about.html" class="active">_about-me</a></li>
+                    <li><a href="project.html">_projects</a></li>
+                </ul>
+            </div>
+            <div class="contact" id="menu-contact">
+                <a href="contact.html">_contact-me</a>
+            </div>
+        </nav>
+
+        <nav class="container">
+           <div class="container-flex">
+                <div class="container-side">
+                    <div class="sidebar-image">
+                        <img src="images/side1.png" alt="">
+                        <img src="images/side2.png" alt="">
+                        <img src="images/side3.png" alt="">
+                    </div>
+                    <div class="sidebar-link">
+                        <div class="sidebar-item sidebar-first" onclick="toggleSubItems('personalInfo')">
+                            <span class="caret" id="personalInfoCaret">&#9658; &nbsp;</span>Personal Info
+                        </div>
+                            <div class="sub-item" id="personalInfoSubItems">
+                                <div class="sidebar-item" onclick="showContent('bio')" style="background-color: transparent;">&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-folder" style="color: #e99287;"></i>&nbsp;Bio</div>
+                                <div class="sidebar-item" onclick="showContent('interest')" style="background-color: transparent;">&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-folder" style="color: #43d9ad;"></i>&nbsp;Interest</div>
+                                <div class="sidebar-item" onclick="showContent('hobbies')" style="background-color: transparent;">&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-folder" style="color: #B197FC;"></i>&nbsp;Hobbies</div>
+                                <div class="sidebar-item" onclick="showContent('skills')" style="background-color: transparent;">&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-folder" style="color: #3A49A4;"></i>&nbsp;Skills</div>
+                            </div>
+                        <div class="sidebar-item sidebar-second">
+                            <span class="caret" id="caret" style="transform: rotate(90deg); padding-top: 1rem;">&#9658; &nbsp;</span><a href="contact.html">Contact</a>
+                        </div>
+                        <span class="contact-second">
+                            <p><i class="fa-solid fa-envelope"></i>chiin.anthony00125@gmail.com</p><br/>
+                            <p><i class="fa-solid fa-phone"></i>+639295516572</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-content container">
+                    <div class="content-container">
+                        <div class="content-num">
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                                <li>11</li>
+                                <li>12</li>
+                                <li>13</li>
+                                <li>14</li>
+                                <li>15</li>
+                                <li>16</li>
+                                <li>17</li>
+                                <li>18</li>
+                                <li>19</li>
+                                <li>20</li>
+                                <li>21</li>
+                                <li>22</li>
+                                <li>23</li>
+                                <li>24</li>
+                                <li>25</li>
+                                <li>26</li>
+                                <li>27</li>
+                                <li>28</li>
+                                <li>29</li>
+                                <li>30</li>
+
+                            </ul>
+                        </div>
+                        <div class="content" id="content">
+                            <p>
+                                /**<br><br>
+                                About Me <br><br>
+                                Greetings! I'm Chris Anthony C. Cañal, a dedicated freelance web developer who crafts websites from
+                                scratch. Being self-taught, I've honed my skills through hands-on experience and a relentless pursuit of knowledge. <br/> <br/>
+                                Located in Cebu City, Cebu, I specialize in creating modern, responsive websites that prioritize both aesthetics and user experience.
+                                
+                                My approach is rooted in a blend of creativity and technical prowess, allowing me to deliver innovative solutions to every project. <br/><br/>
+                                Outside of coding, I find joy in exploring new technologies and contributing to open-source projects. 
+                                Continuously eager to expand my skill set, I thrive on challenges and am always seeking opportunities to grow.<br/><br/>
+                                Whether you're a startup, small business, or individual entrepreneur, I'm here to help you realize your digital aspirations.<br>
+                                <br>
+                                */
+                            </p>
+                        </div>
+                        <div class="content-image">
+                            <div class="image-container">
+                                <span class="title">// Code snippet showcase:</span>
+                                <img src="images/snippet.png" alt="">
+                                <img src="images/snippet2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                
+           </div>
+        </nav>
+
+        <nav class="footer">
+            <div class="footer-detail">
+                <div class="footer-find">
+                    <p>find me in:</p>
+                </div>
+                <div class="footer-image">
+                    <a href="https://www.facebook.com/chrisanthony.canal.37" target="_blank"><i class="fa-brands fa-facebook" style="color: #5F7994"></i></a>
+                </div>
+                <div class="footer-image">
+                    <a href="https://www.instagram.com/chiin00125/" target="_blank"><i class="fa-brands fa-instagram"  style="color: #5F7994;"></i></a>
+                </div>
+                <div class="footer-image">
+                    <a href="https://github.com/chiiiiiin" target="_blank"><i class="fa-brands fa-github" style="color: #5F7994"></i></a>
+                </div>
+            </div>
+        </nav>
+    </nav>
+    
+<script src="script.js"></script>
+</body>
+</html>

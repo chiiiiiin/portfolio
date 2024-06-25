@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes App</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.add-note {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.note {
+    width: 300px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.note .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #777;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="add-note">
+            <textarea id="new-note" placeholder="Add a new note..."></textarea>
+            <button onclick="addNote()">Add Note</button>
+        </div>
+        <div id="notes-container"></div>
+    </div>
+<script>
+    // Function to add a new note
+function addNote() {
+    var noteText = document.getElementById("new-note").value;
+    if (noteText.trim() !== "") {
+        var notesContainer = document.getElementById("notes-container");
+        var noteDiv = document.createElement("div");
+        noteDiv.className = "note";
+        noteDiv.innerHTML = `
+            <span class="close-btn" onclick="removeNote(this)">X</span>
+            <p>${noteText}</p>
+        `;
+        notesContainer.appendChild(noteDiv);
+        document.getElementById("new-note").value = "";
+    } else {
+        alert("Please enter some text for the note!");
+    }
+}
+
+// Function to remove a note
+function removeNote(note) {
+    note.parentNode.remove();
+}
+
+</script>
+</body>
+</html>
