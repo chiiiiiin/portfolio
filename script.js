@@ -87,7 +87,7 @@ function showContent(contentType) {
                           <p style="margin-top:-0.5rem;">Mobile Responsive</p>
                       </nav>
                       <nav class="skill-butn-img">
-                          <input type="image" id="myimage"  src="images/JQuery.png" />
+                          <input type="image" id="myimage"  src="images/jqueryy.png" />
                           <p style="margin-top:-0.5rem;">JQuery</p>
                       </nav>
                       <nav class="skill-butn-img">
